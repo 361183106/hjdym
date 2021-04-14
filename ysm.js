@@ -86,7 +86,7 @@ let ysmBanfirstTask = $.getval('ysmBanfirstTask') == 'true' // 禁止脚本执�
 let ysmBanhalfTask = $.getval('ysmBanhalfTask') == 'ture' // 脚本执行完第50个任务时退出任务，再手动阅读2篇避免出现微信限制
 let ysmtxAmt = ($.getval('ysmtxAmt') || '10000');    // 此处修改提现金额，0.3元等于3000币，默认不提现
 ysmtxAmt = ysmtxAmt > 3000 ? (parseInt(ysmtxAmt / 1000) * 1000) : ysmtxAmt > 0 ? 3000 : 10000
-let concurrency = ($.getval('ysmConcurrency') || '1') - 2 // 并发执行任务的账号数，默单账号循环执行
+let concurrency = ($.getval('ysmConcurrency') || '2') - 1 // 并发执行任务的账号数，默单账号循环执行
 concurrency = concurrency < 2 ? 2 : concurrency
 
 const execNo = [] // 允许执行的账号，为空时不限制，指定时，按照指定的来判断处理，例如：[1,3]
