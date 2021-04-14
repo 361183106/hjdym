@@ -37,8 +37,7 @@ jobs:
         run: |
           node ysm.js
         env:
-          ysm_COOKIE: ${{ secrets.ysm_COOKIE }}
-          ysm_secrets:${{ secrets.ysm }}
+          YSM_COOKIE: ${{ secrets.YSM_COOKIE }}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
