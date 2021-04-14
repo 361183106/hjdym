@@ -70,7 +70,18 @@ hostname = m.*
 
 const $ = new Env('番茄看看');
 const fqkkurlArr = [], fqkkhdArr = []
-let fqkk = $.getjson('fqkk', [])
+let fqkk = $.getjson('fqkk', [
+  {
+    "uid": 3964197,
+    "url": "http://m.pmblog.top/reada/getTask",
+    "hd": "{\"Accept\":\"*/*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"m.pmblog.top\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://m.pmblog.top\",\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN\",\"Connection\":\"keep-alive\",\"Referer\":\"http://m.pmblog.top/reada/\",\"Content-Length\":\"0\",\"Cookie\":\"autoRead=1; udtauth=3609x6997hrF%2FXSbAwtYAO8INxhyg8TB7rsPXJ3LCJz6kelG2M%2FHTWbiMEDf6R3bilS%2BidOo46KnoBvAouIAa1gL7xXH1vh3L9fw1iDzBJnemi9t4JqF9XSPCVw37unqWtRrFGPn%2FGKbZZd%2Feunf2VE7LEzeOT1EXS%2B4xoPDVt0; PHPSESSID=a9nlc0a70ovs5pnlhku73og0bi\"}"
+  },
+  {
+    "uid": 4001006,
+    "url": "http://m.wrxaa.xyz/reada/getTask",
+    "hd": "{\"Accept\":\"*/*\",\"Proxy-Connection\":\"keep-alive\",\"X-Requested-With\":\"XMLHttpRequest\",\"Host\":\"m.wrxaa.xyz\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate\",\"Origin\":\"http://m.wrxaa.xyz\",\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN\",\"Connection\":\"keep-alive\",\"Referer\":\"http://m.wrxaa.xyz/reada?upuid=3982156\",\"Content-Length\":\"0\",\"Cookie\":\"autoRead=1; udtauth=5737fQfXppuff6uYlgR%2B6AcA34%2BW4qT2geg62FXLE7F4486LOTO6qpXVef8lr457VXpsoftIqK6RHol8pwUp%2BwLBHDoug2qU6OUDfqSoqzRA9TItnfnjk5fc1HIQ5xBw8NHsAR6amwpKnkTf0YzmblPC7DJ54Q3jBIrsHReJJmA; PHPSESSID=8lfdffr0g0p5r7obcjvasp15s5\"}"
+  }
+])
 let fqkkBanfirstTask = $.getval('fqkkBanfirstTask') || 'false' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
 let fqkkCkMoveFlag = $.getval('fqkkCkMove') || ''
 let fqtx = ($.getval('fqtx') || '100');  // 此处修改提现金额，0.3元等于30，默认为提现一元，也就是100
