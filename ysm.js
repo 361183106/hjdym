@@ -80,13 +80,12 @@ let ysm = $.getjson('ysm', [
     "secret": "eyJpdiI6InluZmYzY0c0bzRtZEhUdDFOQytRenc9PSIsInZhbHVlIjoiZ3NWVFJRV2E1QklNOTJBd01qa3RnVnhYdHpvYThLVjBZcDlabkN5UmYya3hlQkkyVEJ6Z0UzSFVCdFlRdjdnOEhNVzZzZTQrWlY4enN3d1FsN09DV0ZENG5RbTRoU3Y2WXZqS2RKOFVaZ0FnV1hcL1Jsbk9yWFRMaHBGWnJYQ2xNQjJXb3Nob2VCQXFXb3VxK09BSG0zMlwvWEpSN0c2WjVMZUEwVDNoN2s4Qjk5N21tMWNRM1ByS0RxWmhIZFhsUnNNOWN1M0tGTllSZE03Njg5dWFocGgzaUEyRWxRanlxT1kwNit5UGF0WnI3VXdTWHVuaXFWaVZVUXByTWE4dld4aHFOZmxIN3hRM1ZrMVFxZkdrdWh3WE1PVndpY0hVRmIwcmdmWFNhNWRcL1VaeUVKeVByTWVyUE1KbDI4MExzQXoxS3pBT1wvZk0zOG41UWY5ZStMXC81WDNpNlVRTEZRU2tCSTdwemVjWjduWXlDck5KV2pCVmJTaXErM1ZJUlp4WSsxUDRWVGhPWUw1akRnMzNFZWRpZ1d3PT0iLCJtYWMiOiI0ZmQ4MGI5ZDhjZDU3MzIxNGU5NDgwOGRmYmU2MDk0Y2Y5ZWU0M2U4NDY0OTIzOTZmZWUxYWE1YmE0YjA5YzM2In0%3D",
     "txbody": "openid=oksnzwe_B3IdMu8VVm455278tMWI&request_id=e329654b4683bc7c4bd982c8d2fd8b9b&ua=1"
   }
-
 ])
 let needNotice = $.getval('ysmNotice') == 'true'
 let ysmBanfirstTask = $.getval('ysmBanfirstTask') == 'true' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
 let ysmBanhalfTask = $.getval('ysmBanhalfTask') == 'false' // 脚本执行完第50个任务时退出任务，再手动阅读2篇避免出现微信限制
 let ysmtxAmt = ($.getval('ysmtxAmt') || '10000') - 10000  // 此处修改提现金额，0.3元等于3000币，默认不提现
-ysmtxAmt = ysmtxAmt > 3000 ? (parseInt(ysmtxAmt / 1000) * 1000) : ysmtxAmt > 0 ? 3000 : 0
+ysmtxAmt = ysmtxAmt > 10000 ? (parseInt(ysmtxAmt / 1000) * 1000) : ysmtxAmt > 0 ? 10000 : 0
 let concurrency = ($.getval('ysmConcurrency') || '2') - 2 // 并发执行任务的账号数，默单账号循环执行
 concurrency = concurrency < 1 ? 1 : concurrency
 
