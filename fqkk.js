@@ -86,7 +86,7 @@ let fqkkBanfirstTask = $.getval('fqkkBanfirstTask') || 'false' // 禁止脚本�
 let fqkkCkMoveFlag = $.getval('fqkkCkMove') || ''
 let fqtx = ($.getval('fqtx') || '100');  // 此处修改提现金额，0.3元等于30，默认为提现一元，也就是100
 let concurrency = ($.getval('fqkkConcurrency') || '2') - 0; // 并发执行任务的账号数，默单账号循环执行
-concurrency = concurrency < 2 ? 2: concurrency;
+concurrency = concurrency < 2 ? 1: concurrency;
 let fqkktz = ''
 !(async () => {
   if (typeof $request !== "undefined") {
