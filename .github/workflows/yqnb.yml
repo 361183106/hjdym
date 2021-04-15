@@ -6,7 +6,7 @@ name: 「易趣牛帮」
 on:
   workflow_dispatch:
   schedule:
-    - cron: '6 2 * * *'
+    - cron: '7 7,27 0-15 * * *'
   repository_dispatch:
     types: yqnb.js
 jobs:
@@ -37,7 +37,7 @@ jobs:
         run: |
           node yqnb.js
         env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+          YQNB_COOKIE: ${{ secrets.YQNB_COOKIE }}
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
