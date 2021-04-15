@@ -37,7 +37,7 @@ jobs:
         run: |
           node yqnb.js
         env:
-          YQNB_COOKIE: ${{ secrets.YQNB_COOKIE }}
+      
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
           PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
