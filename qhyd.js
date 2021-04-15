@@ -53,6 +53,8 @@ hostname = www.qianhe5.com
 
 
 const $ = new Env('千禾阅读自动阅读');
+const notify = $.isNode() ? require("./sendNotify") : ``;
+const COOKIE = $.isNode() ? require("./yqnbCOOKIE") : ``;
 let status;
 status = (status = ($.getval("qhydstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 const qhydurlArr = [], qhydhdArr = [],qhydlqhdArr = [],qhydbodyArr = [],qhydcount = ''
