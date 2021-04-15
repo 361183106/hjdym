@@ -61,14 +61,14 @@ notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知
 Minutes = 10; // 通知 默认控制在0-10分内
 $.message = '', COOKIES_SPLIT = '', CASH = '', XH = 0, Length = 0, ddtime = '';
 
-let yqnbheaderArr = [];
+let yqnbheaderArr = [BJYADMIN=nk0hcqd8v03pathr8i26jco7d5];
 let yqnbheaderVal = ``;
-let middleyqnbHEADER = [];
+let middleyqnbHEADER = [BJYADMIN=nk0hcqd8v03pathr8i26jco7d5];
 
 
-let yqnbbodyArr = [];
+let yqnbbodyArr = [9268];
 let yqnbbodyVal = ``;
-let middleyqnbBODY = [];
+let middleyqnbBODY = [9268];
 
 
 if ($.isNode() && process.env.YQNB_yqnbHEADER) {
