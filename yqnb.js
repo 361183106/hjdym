@@ -54,20 +54,20 @@ GXRZ = '4.14 制作'
 const $ = Env("易趣牛帮");
 $.idx = ($.idx = ($.getval('yqnbSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
-const COOKIE = $.isNode() ? require("./yqnbCOOKIE") : `"yqnbheader":"BJYADMIN=nk0hcqd8v03pathr8i26jco7d5","yqnbbody":"9268"`;
+const COOKIE = $.isNode() ? require("./yqnbCOOKIE") : ``;
 const logs = 0; // 0关闭日志，1原始日志，2格式化，3格式化且解码，
 notifyttt = 1; // 0为关闭外部推送，1为12 23 点外部推送
 notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
 Minutes = 10; // 通知 默认控制在0-10分内
 $.message = '', COOKIES_SPLIT = '', CASH = '', XH = 0, Length = 0, ddtime = '';
 
-let yqnbheaderArr = [];
+let yqnbheaderArr = ["yqnbheader":"BJYADMIN=nk0hcqd8v03pathr8i26jco7d5"];
 let yqnbheaderVal = ``;
 let middleyqnbHEADER = [];
 
 
-let yqnbbodyArr = [];
-let yqnbbodyVal = `9268`;
+let yqnbbodyArr = ["9268"];
+let yqnbbodyVal = ``;
 let middleyqnbBODY = [];
 
 
