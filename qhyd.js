@@ -73,7 +73,7 @@ let qhydkey = '',id = '',uid='',tid='',name=''
     qhydbodyArr.push($.getdata('qhydbody'))
     let qhydcount = ($.getval('qhydcount') || '1');
 	
-	else if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
+ if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
     console.log(
         `============ cookie方式为：boxjs复制会话 =============\n`
     );
