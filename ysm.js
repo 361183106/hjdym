@@ -70,21 +70,9 @@ https://raw.githubusercontent.com/age174/-/main/feizao.box.json
 
 const $ = new Env('云扫码')
 let ysm = $.getjson('ysm', [
-  {
-    "openid": "oksnzwVtes8sT76uGHC3QS3yr7PM",
-    "domain": "http://aaa.saomayun.com.cn/yunonline/v1/",
-    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN",
-    "secret": "eyJpdiI6Ik5QSXhBd3hPVU5jdXpYR3NmXC8zUjdRPT0iLCJ2YWx1ZSI6IlBHNFN1RExuS2NpdStRWHFHN1FZelJjQUVpNDVGS3crbTNBcDJwdXZEeTVDYWZ0V0dFV1FGNVF5N1d6S1wvaFFzYlpcL1FJZk1BQ3JCYlwvOU93OVQ0S1dxTTJvV1AwNUlQQ0ZBRG1yM1ZRazNucDhSdmtTa2lUdmhZcHpsNlBpUlZNWW8zdUN4YTRlQTJ3Yzd4TGVRY0lZOEprbVVuZ3lOSUFUdlh3bk9aRVhXYnphQU5HNER4TG9JMlBzV0wwaElEV2hqUzdTdzg1eUJhdDJ2NTRXeW50alg5ODhHV2JiUHFNYnA3QzFaU2dPRGh4RWVGWVNwekk0MDZjbUFET3ZDZ2RnVU84MnpoZTRPMVVNYWFkc28yS25nMHo3N1NwNHBVT3VKTFNtZVFlK2dzb2lzQjZiYitzRXJ5UkVPcHF4cEQzUXNOTkNlMGJ2QVZnUFhzc0RPbXNVMkhnM2dycVJyUlM2WUwra01JQXlDeHk1YjZDR3dzVXQxeldHb0c1RmFcL1I3RFBJXC9FUU4wUUp3d2R4Qmh1akcwZz09IiwibWFjIjoiMTM5MGIyOTYyNmYyZGNjNGViZGYzNmQ5MGVmMTMxMDM3MTU3MGJjZjJjY2M0ODI0ZjgwZGQxOTJhYjYzZTIyYyJ9",
-    "txbody": "openid=oksnzwVtes8sT76uGHC3QS3yr7PM&request_id=b403e80b26e59173cf7edb9276e6408b&ua=1"
-  },
-  {
-    "openid": "oksnzwe_B3IdMu8VVm455278tMWI",
-    "domain": "http://aaa.saomayun.com.cn/yunonline/v1/",
-    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN",
-    "secret": "eyJpdiI6InluZmYzY0c0bzRtZEhUdDFOQytRenc9PSIsInZhbHVlIjoiZ3NWVFJRV2E1QklNOTJBd01qa3RnVnhYdHpvYThLVjBZcDlabkN5UmYya3hlQkkyVEJ6Z0UzSFVCdFlRdjdnOEhNVzZzZTQrWlY4enN3d1FsN09DV0ZENG5RbTRoU3Y2WXZqS2RKOFVaZ0FnV1hcL1Jsbk9yWFRMaHBGWnJYQ2xNQjJXb3Nob2VCQXFXb3VxK09BSG0zMlwvWEpSN0c2WjVMZUEwVDNoN2s4Qjk5N21tMWNRM1ByS0RxWmhIZFhsUnNNOWN1M0tGTllSZE03Njg5dWFocGgzaUEyRWxRanlxT1kwNit5UGF0WnI3VXdTWHVuaXFWaVZVUXByTWE4dld4aHFOZmxIN3hRM1ZrMVFxZkdrdWh3WE1PVndpY0hVRmIwcmdmWFNhNWRcL1VaeUVKeVByTWVyUE1KbDI4MExzQXoxS3pBT1wvZk0zOG41UWY5ZStMXC81WDNpNlVRTEZRU2tCSTdwemVjWjduWXlDck5KV2pCVmJTaXErM1ZJUlp4WSsxUDRWVGhPWUw1akRnMzNFZWRpZ1d3PT0iLCJtYWMiOiI0ZmQ4MGI5ZDhjZDU3MzIxNGU5NDgwOGRmYmU2MDk0Y2Y5ZWU0M2U4NDY0OTIzOTZmZWUxYWE1YmE0YjA5YzM2In0%3D",
-    "txbody": "openid=oksnzwe_B3IdMu8VVm455278tMWI&request_id=e329654b4683bc7c4bd982c8d2fd8b9b&ua=1"
-  }
-])
+   {    "openid": "oksnzwVtes8sT76uGHC3QS3yr7PM",    "domain": "http://erd.smkxcjh.shop/yunonline/v1/",    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN",    "secret": "eyJpdiI6IjE4KzFWdjlZaGNTXC84eXdxellZTmx3PT0iLCJ2YWx1ZSI6IkczWld1eFVBaE1EdVRLdmgwYTYyYk5HM2tGaVZLbVVsMUV5RGhhVUh4V0l3OVwvOFpLdXhPTDMwMkxIUUptdzVhQU5wa0JvMVY4UXJmcG04eWgwSHo3TUg3NjR5RDVDSE41TlI2V2V3QjlPc0NTZW1iNjVGclAyS1wvblNON1p2dFNBanBpTXhQTXN3OWFReGhMcHRYVlwvWlVWdjNWRnUzbllKRisybnU1VEVVOWJiRnF0Q25qODdLTEV2S0NQUndaclVzK0plQ0VoNW5TeEFsanp2K0YrYXVmQUdDelRYa3hSOFpEdlhCb0pNV3M4aXFOekJaYkc1bnJpSGp2elFlZG9rWmpNNHp6RWNoNHk3VkFwZXMyeDhEakd6cW1LVFlpaVlxYW11blBwcUpoNnFDeXA5UGQrdDQ4dk5mbVVcL0JNZm1JQzJhWUs4M0lpakZoekJGbk5aZFJ3VitHZ09LRzVUb1ZEXC9uRDRIUDYrRGVkbk9NN2dPVUlncVFnZUpkbjRYNnMzRmxcL0xZK0JZejZrTG85NW9Cb3c9PSIsIm1hYyI6IjBhODU3NTgwZjA0OTRjNWM5NWU2ZWJmYWE3ZWE4YjdhMDM4MTEwZGZiNDVkNzkzMWE3MGMzYzM5YmZjMWRhMjUifQ%3D%3D",    "txbody": "openid=oksnzwVtes8sT76uGHC3QS3yr7PM&request_id=043dc1c73c42823d9e0c8467fedeb4c3&ua=1"  },
+  {    "openid": "oksnzwe_B3IdMu8VVm455278tMWI",    "domain": "http://erd.poyfx.top/yunonline/v1/",    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN",    "secret": "eyJpdiI6Iktub0FWQmtXZmdNbEZRUWNmXC9OK0FBPT0iLCJ2YWx1ZSI6Img5REt1OVRjcVpBVU1aZHMrd1NyK0tRVFF1Vm9lWWVyVW1jM2gwMW9xckMyT1JOMFpyQzZDazBnUGczNWxNOVRHemNkQkw5TUV2VUllck93QlFkSytxUHU0dDkzTEc5a01OZFI0c0tUamhZMUNsNFRjeUxJTmYxNEp1VDVYU29lM2lTYVwvam5Ia0RcLzNJVm5PUGdSRDNTdFwva1VqVktGYUgrcmhTNExSQzg1dFpGakJ5Y3Z4OE80d2E5XC9BQk9Pa2dBMXJ2K1hQRWU1eitLN21wTms4YmVaekJ4SzJUdlNTbk96RVFjS2lHaWJRb3JBQlZqZWNqbVFpS0RhMTF6YmdGZmdrNjRPZTNadnNDenc0MzF3UUppdWduamdsRk9udnBaWmVneFZPTEYxN09QOHpmZDNEZjZmYlwvME40dUVxaUZCbWpZc1J4OFBYZXdYODZuQ016cGpYaWQ2MDB3M3JPXC9tYytKRXlqQjd5UEdEWUJFTkZiRXY1Y2Q4bTZcLzlCZnl4Ulh0aHVCenpxNWdRbHZ5UGJYNUt3PT0iLCJtYWMiOiI4MmI1YmYzMGU0ZDUzOTA2ZmZiYzkxZTY4YWQzYmJiNDY5Y2Y4N2YzZjY5YWQxYTljYjFlZWU1YzVjNTM0Mjc5In0%3D",    "txbody": "openid=oksnzwe_B3IdMu8VVm455278tMWI&request_id=16d9abece001a15dacfc098e33532684&ua=1"  }]
+)
 let needNotice = $.getval('ysmNotice') == 'true'
 let ysmBanfirstTask = $.getval('ysmBanfirstTask') == 'true' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
 let ysmBanhalfTask = $.getval('ysmBanhalfTask') == 'true' // 脚本执行完第50个任务时退出任务，再手动阅读2篇避免出现微信限制
