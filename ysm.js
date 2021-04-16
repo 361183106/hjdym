@@ -74,8 +74,8 @@ let ysm = $.getjson('ysm', [
   {    "openid": "oksnzwe_B3IdMu8VVm455278tMWI",    "domain": "http://erd.poyfx.top/yunonline/v1/",    "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN",    "secret": "eyJpdiI6Iktub0FWQmtXZmdNbEZRUWNmXC9OK0FBPT0iLCJ2YWx1ZSI6Img5REt1OVRjcVpBVU1aZHMrd1NyK0tRVFF1Vm9lWWVyVW1jM2gwMW9xckMyT1JOMFpyQzZDazBnUGczNWxNOVRHemNkQkw5TUV2VUllck93QlFkSytxUHU0dDkzTEc5a01OZFI0c0tUamhZMUNsNFRjeUxJTmYxNEp1VDVYU29lM2lTYVwvam5Ia0RcLzNJVm5PUGdSRDNTdFwva1VqVktGYUgrcmhTNExSQzg1dFpGakJ5Y3Z4OE80d2E5XC9BQk9Pa2dBMXJ2K1hQRWU1eitLN21wTms4YmVaekJ4SzJUdlNTbk96RVFjS2lHaWJRb3JBQlZqZWNqbVFpS0RhMTF6YmdGZmdrNjRPZTNadnNDenc0MzF3UUppdWduamdsRk9udnBaWmVneFZPTEYxN09QOHpmZDNEZjZmYlwvME40dUVxaUZCbWpZc1J4OFBYZXdYODZuQ016cGpYaWQ2MDB3M3JPXC9tYytKRXlqQjd5UEdEWUJFTkZiRXY1Y2Q4bTZcLzlCZnl4Ulh0aHVCenpxNWdRbHZ5UGJYNUt3PT0iLCJtYWMiOiI4MmI1YmYzMGU0ZDUzOTA2ZmZiYzkxZTY4YWQzYmJiNDY5Y2Y4N2YzZjY5YWQxYTljYjFlZWU1YzVjNTM0Mjc5In0%3D",    "txbody": "openid=oksnzwe_B3IdMu8VVm455278tMWI&request_id=16d9abece001a15dacfc098e33532684&ua=1"  }]
 )
 let needNotice = $.getval('ysmNotice') == 'true'
-let ysmBanfirstTask = $.getval('ysmBanfirstTask') == 'true' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
-let ysmBanhalfTask = $.getval('ysmBanhalfTask') == 'true' // 脚本执行完第50个任务时退出任务，再手动阅读2篇避免出现微信限制
+let ysmBanfirstTask = $.getval('ysmBanfirstTask') == 'false' // 禁止脚本执行首个任务，避免每日脚本跑首次任务导致微信限制
+let ysmBanhalfTask = $.getval('ysmBanhalfTask') == 'false' // 脚本执行完第50个任务时退出任务，再手动阅读2篇避免出现微信限制
 let ysmtxAmt = ($.getval('ysmtxAmt') || '0') - 10000 // 此处修改提现金额，0.3元等于3000币，默认不提现
 ysmtxAmt = ysmtxAmt > 3000 ? (parseInt(ysmtxAmt / 1000) * 1000) : ysmtxAmt > 0 ? 3000 : 10000
 let concurrency = ($.getval('ysmConcurrency') || '1') - 2 // 并发执行任务的账号数，默单账号循环执行
