@@ -58,29 +58,14 @@ const COOKIE = $.isNode() ? require("./qhydCOOKIE") : ``;
 let status;
 status = (status = ($.getval("qhydstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
 const qhydurlArr = [], qhydhdArr = [],qhydlqhdArr = [],qhydbodyArr = [],qhydcount = ''
-let times = Math.round(Date.now() / 1000)
-let qhydurl = $.getdata('qhydurl')
-let qhydhd = $.getdata('qhydhd')
-let qhydlqhd = $.getdata('qhydlqhd')
-let qhydbody = $.getdata('qhydbody')
-let qhydkey = '',id = '',uid='',tid='',name=''
-!(async () => {
-  if (typeof $request !== "undefined") {
-    await qhydck()
-  } else {qhydurlArr.push($.getdata('qhydurl'))
-    qhydhdArr.push($.getdata('qhydhd'))
-    qhydlqhdArr.push($.getdata('qhydlqhd'))
-    qhydbodyArr.push($.getdata('qhydbody'))
-    let qhydcount = ($.getval('qhydcount') || '1');
-if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
-    console.log(
-        `============ cookie方式为：boxjs复制会话 =============\n`
-    );
-if ($.isNode() && process.env.YQNB_yqnbHEADER) {
 
-    notifyttt = process.env.YQNB_notifyttt || "1";
-    notifyInterval = process.env.YQNB_notifyInterval || "2";
-    Minutes = process.env.YQNB_Minutes || "10";
+ `============ cookie方式为：boxjs复制会话 =============\n`
+
+if ($.isNode() && process.env.qhyd_qhydHEADER) {
+
+    notifyttt = process.env.qhyd_notifyttt || "1";
+    notifyInterval = process.env.qhyd_notifyInterval || "2";
+    
 
     COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
     console.log(
@@ -91,7 +76,7 @@ if ($.isNode() && process.env.YQNB_yqnbHEADER) {
     notifyttt = (COOKIE.settings.find(item => item.id === `qhydnotifyttt`)).val;
     notifyInterval = (COOKIE.settings.find(item => item.id === `qhydnotifyInterval`)).val;
     Minutes = (COOKIE.settings.find(item => item.id === `qhydMinutes`)).val;
-    yqnbCount = (COOKIE.settings.find(item => item.id === `qhydCount`)).val || '1';
+    qhydCount = (COOKIE.settings.find(item => item.id === `qhydCount`)).val || '1';
     for (let i = 1; i <= qhydCount; i++) {
         if (i == 1) {
             op = ``
