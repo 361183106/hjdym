@@ -1,21 +1,72 @@
+
+
 /* ziye
 独立COOKIE文件
 github地址 https://github.com/ziye888
 TG频道地址  https://t.me/ziyescript
 TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
 boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs.json
-圈X task订阅 https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye-gallery.json
+
 转载请备注个名字，谢谢
-在boxjs里选择复制会话 粘贴至cookie处
+
+方式一
+在boxjs里选择复制会话 粘贴至cookie1处
+
+
+
+方式三
+把每一个ck在分别``里面填写，多账号换行 
+
 */
 
-
-
-
-let cookie = {"id":"qhyd","name":"千禾阅读","keys":["qhydurl","qhydhd","qhydlqhd","qhydbody","qhydurl2","qhydhd2","qhydlqhd2","qhydbody2","qhydurl3","qhydhd3","qhydlqhd3","qhydbody3","qhydurl4","qhydhd4","qhydlqhd4","qhydbody4","qhydurl5","qhydhd5","qhydlqhd5","qhydbody5","qhydurl6","qhydhd6","qhydlqhd6","qhydbody6","qhydurl7","qhydhd7","qhydlqhd7","qhydbody7","qhydurl8","qhydhd8","qhydlqhd8","qhydbody8","qhydurl9","qhydhd9","qhydlqhd9","qhydbody9","qhydurl10","qhydhd10","qhydlqhd10","qhydbody10"],"author":"@feizao","settings":[{"id":"qhydstatus","name":"当前账号","val":"1","type":"number","desc":"当前账号对应"},{"id":"qhydcount","name":"账号个数","val":"1","type":"number","desc":"需要几个账号，数字为几"}],"repo":"https://github.com/age174/-/blob/main/qhyd.js","icons":["https://ae01.alicdn.com/kf/U413ab7460abb4a28b11deac3c5034243N.jpg","https://ae01.alicdn.com/kf/U413ab7460abb4a28b11deac3c5034243N.jpg"],"script":"https://raw.githubusercontent.com/age174/-/main/qhyd.js","icon":"https://ae01.alicdn.com/kf/U413ab7460abb4a28b11deac3c5034243N.jpg","favIcon":"mdi-star","favIconColor":"primary","datas":[{"key":"qhydurl","val":"https://www.qianhe5.com/api/user/info?token=NWQ5ZTZjMjljMWY5OTYyODc5MzIwNjFmZmI2ZTZjYWY1NGE0ZGE0ODp7Im9wZW5pZCI6Im9yVmhyMDZBbHJidXZ6b19XWlVIUjc0LXJ5MGsiLCJhcHBfaWQiOm51bGx9"},{"key":"qhydhd","val":"{\"Content-Type\":\"application/json;charset=UTF-8\",\"Accept\":\"application/json, text/plain, */*\",\"Host\":\"www.qianhe5.com\",\"X-XSRF-TOKEN\":\"eyJpdiI6IkVEWldsay94Tko2MmZFSEF2MlFraVE9PSIsInZhbHVlIjoiUmVuV3VRdTdYODBrcGhraUN3dWtWQjJ1R3ZRRUpVd3crWTBBQXNYQXdRUXVFbFpLd245eHJKNW5zMy9YOEJWWkVjU1dISmtWQ05TQWllN1pJaHVrZ1YzV08xMEp6Rm1oV1paRjRMbjBka25ZVDhmQ0hidElJOGEzWXZkTVlWV2YiLCJtYWMiOiI5YjBiMGIyMGM1ZGVkNzVjODJhYWE5NWY4ZmQ2Njk4NzE5M2RjMTc1Y2UyNjIyYmM0ZTAwNjQ0NjkzYzI1MjNkIn0=\",\"Accept-Language\":\"zh-cn\",\"Accept-Encoding\":\"gzip, deflate, br\",\"Origin\":\"https://www.qianhe5.com\",\"Content-Length\":\"57\",\"Connection\":\"keep-alive\",\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.2(0x18000239) NetType/WIFI Language/zh_CN\",\"Referer\":\"https://www.qianhe5.com/\",\"Cookie\":\"XSRF-TOKEN=eyJpdiI6IkVEWldsay94Tko2MmZFSEF2MlFraVE9PSIsInZhbHVlIjoiUmVuV3VRdTdYODBrcGhraUN3dWtWQjJ1R3ZRRUpVd3crWTBBQXNYQXdRUXVFbFpLd245eHJKNW5zMy9YOEJWWkVjU1dISmtWQ05TQWllN1pJaHVrZ1YzV08xMEp6Rm1oV1paRjRMbjBka25ZVDhmQ0hidElJOGEzWXZkTVlWV2YiLCJtYWMiOiI5YjBiMGIyMGM1ZGVkNzVjODJhYWE5NWY4ZmQ2Njk4NzE5M2RjMTc1Y2UyNjIyYmM0ZTAwNjQ0NjkzYzI1MjNkIn0%3D; laravel_session=eyJpdiI6Im1HS1ZhYTYwbHRHTVViZVNTOWFiTEE9PSIsInZhbHVlIjoiNTlQNHZGb3hHYkxGNlNIRVVQMXFkZmlEanpNQm83OGUwb1E2dzlxYlhqWE13Vk9qVjZNb09Md2pJMWNyVytGYkJpaTFyZW1yUy9vbzdGTVFkOVRqeVhxMllKTklIK1ZiTVI4MHY4UVJtZmFORzBrRTNtSXMwWVYycWVVOTljTDgiLCJtYWMiOiI0YTZmOWJiM2I1MmFkOTM1ODJkZTVlODM1YmUxZGRiNTBjZGU0M2NlYTQ1ODQ3YWViMDAwY2UwY2JkMjliMDRhIn0%3D\",\"X-CSRFToken\":\"null\"}"},{"key":"qhydlqhd","val":"{\"Cookie\":\"XSRF-TOKEN=eyJpdiI6IjZicHI1U2t4TkVJWUR6OG5yNWdMY3c9PSIsInZhbHVlIjoiN3VVY2xaR2p5TlFya2tIVG5XdnUyRnV0OUtXZGdRT1E2ckdZelVlV3FrSzYzVGd1eVMxaEFnMXUzTklBanhDWDNMclQ1azZyREk3cDhCbjgxMWYvazdEYzk3Z25oQVBXV1ZlZ0xpaTdDbHVHWFFVQjJSMk9YNDg0SUxiUmpjRk4iLCJtYWMiOiJkNTkxMGE4ODlmZjNmNTI2MGQ2MjBjNDRhYTQyOTA5ZDdkYzk1YmMyODQ1OTExYjAxZDZjYWJkYjNkNzFmYmYyIn0%3D; csrftoken=tvdlAChCz77qZm5cYDFaErfmIvoEBrC5EoP9tuSg7ou0Oggj1Csro7FFSabbgpAD; laravel_session=eyJpdiI6IlJsc3FnQVpTN1ppMXltTFdkRFBKYWc9PSIsInZhbHVlIjoicjRVVXA2eE5PNnJIM2NvYjRaeXZST2t2VUtFWngvZ2NlM1dDcTFhK04zdzRPOFZKMWNSUUJqcDdNN2VTZkd6TlV3YXpEOWV0MjBqN0FGQTJVL0Y5alQ2dm0rdkJKcCs1ajNLVHF6MDBlS2xRSVd2djViRXo1V0FWbGl1YnBjSTEiLCJtYWMiOiJkY2ZjZWRkNGQyZWQ5MjhlODRhY2VkMmQxMzBhNDRjY2ExYjE2YTdkOGU2MTliZWFiOWY2ZjdhMmVmY2M4ODAyIn0%3D; openid=orVhr06Alrbuvzo_WZUHR74-ry0k; token=NWQ5ZTZjMjljMWY5OTYyODc5MzIwNjFmZmI2ZTZjYWY1NGE0ZGE0ODp7Im9wZW5pZCI6Im9yVmhyMDZBbHJidXZ6b19XWlVIUjc0LXJ5MGsiLCJhcHBfaWQiOm51bGx9\",\"Accept\":\"application/json, text/plain, */*\",\"Accept-Encoding\":\"gzip, deflate, br\",\"Connection\":\"keep-alive\",\"Host\":\"www.qianhe5.com\",\"X-XSRF-TOKEN\":\"eyJpdiI6IjZicHI1U2t4TkVJWUR6OG5yNWdMY3c9PSIsInZhbHVlIjoiN3VVY2xaR2p5TlFya2tIVG5XdnUyRnV0OUtXZGdRT1E2ckdZelVlV3FrSzYzVGd1eVMxaEFnMXUzTklBanhDWDNMclQ1azZyREk3cDhCbjgxMWYvazdEYzk3Z25oQVBXV1ZlZ0xpaTdDbHVHWFFVQjJSMk9YNDg0SUxiUmpjRk4iLCJtYWMiOiJkNTkxMGE4ODlmZjNmNTI2MGQ2MjBjNDRhYTQyOTA5ZDdkYzk1YmMyODQ1OTExYjAxZDZjYWJkYjNkNzFmYmYyIn0=\",\"Accept-Language\":\"zh-cn\",\"Referer\":\"https://www.qianhe5.com/\",\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1\",\"X-CSRFToken\":\"tvdlAChCz77qZm5cYDFaErfmIvoEBrC5EoP9tuSg7ou0Oggj1Csro7FFSabbgpAD\"}"},{"key":"qhydbody","val":"{\"urlKey\":\"6eb00e20a3b7a45a3b73cbe31a195158NjIxODcyNDg=\"}"},{"key":"qhydurl2","val":""},{"key":"qhydhd2","val":""},{"key":"qhydlqhd2","val":""},{"key":"qhydbody2","val":""},{"key":"qhydurl3","val":""},{"key":"qhydhd3","val":""},{"key":"qhydlqhd3","val":""},{"key":"qhydbody3","val":""},{"key":"qhydurl4","val":""},{"key":"qhydhd4","val":""},{"key":"qhydlqhd4","val":""},{"key":"qhydbody4","val":""},{"key":"qhydurl5","val":""},{"key":"qhydhd5","val":""},{"key":"qhydlqhd5","val":""},{"key":"qhydbody5","val":""},{"key":"qhydurl6","val":""},{"key":"qhydhd6","val":""},{"key":"qhydlqhd6","val":""},{"key":"qhydbody6","val":""},{"key":"qhydurl7","val":""},{"key":"qhydhd7","val":""},{"key":"qhydlqhd7","val":""},{"key":"qhydbody7","val":""},{"key":"qhydurl8","val":""},{"key":"qhydhd8","val":""},{"key":"qhydlqhd8","val":""},{"key":"qhydbody8","val":""},{"key":"qhydurl9","val":""},{"key":"qhydhd9","val":""},{"key":"qhydlqhd9","val":""},{"key":"qhydbody9","val":""},{"key":"qhydurl10","val":""},{"key":"qhydhd10","val":""},{"key":"qhydlqhd10","val":""},{"key":"qhydbody10","val":""}],"sessions":[],"isLoaded":true}
+modulees = 1 //1 选择方式一 3 选择方式三
 
 
 
 
 
-module.exports = cookie
+//方式一
+let cookie1 = {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+let refreshtokenVal= ``
+let iboxpayvideoheaderVal= ``
+let iboxpayvideobodyVal= ``
+
+
+let cookie3 = {
+
+  refreshtokenVal: refreshtokenVal, 
+    iboxpayvideoheaderVal: iboxpayvideoheaderVal,  
+      iboxpayvideobodyVal: iboxpayvideobodyVal,   
+  
+}
+
+
+
+if (modulees == 1) {
+    module.exports = cookie1
+}
+
+if (modulees == 2) {
+    module.exports = cookie2
+}
+
+
+if (modulees == 3) {
+    module.exports = cookie3
+}
+  
+
+
