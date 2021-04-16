@@ -72,12 +72,22 @@ let qhydkey = '',id = '',uid='',tid='',name=''
     qhydlqhdArr.push($.getdata('qhydlqhd'))
     qhydbodyArr.push($.getdata('qhydbody'))
     let qhydcount = ($.getval('qhydcount') || '1');
-	
- if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
+if ($.isNode() && COOKIE.datas && COOKIE.datas[0].val != '') {
     console.log(
         `============ cookie方式为：boxjs复制会话 =============\n`
     );
+if ($.isNode() && process.env.YQNB_yqnbHEADER) {
 
+    notifyttt = process.env.YQNB_notifyttt || "1";
+    notifyInterval = process.env.YQNB_notifyInterval || "2";
+    Minutes = process.env.YQNB_Minutes || "10";
+
+    COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
+    console.log(
+        `============ cookies分隔符为：${JSON.stringify(
+      COOKIES_SPLIT
+    )} =============\n`
+    );
     notifyttt = (COOKIE.settings.find(item => item.id === `qhydnotifyttt`)).val;
     notifyInterval = (COOKIE.settings.find(item => item.id === `qhydnotifyInterval`)).val;
     Minutes = (COOKIE.settings.find(item => item.id === `qhydMinutes`)).val;
