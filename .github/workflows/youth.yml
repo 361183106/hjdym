@@ -28,8 +28,8 @@ jobs:
       - name: '运行 【中青看点】'
         if: env.YOUTH_HEADER
         run: |
-          node youth.js
+          node Youth.js
         env:
-            DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-            DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-            TZ: Asia/shanghai
+          YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TZ: Asia/shanghai
