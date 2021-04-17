@@ -34,6 +34,6 @@ jobs:
         run: |
           node hjdym/youth.js
         env:
-      READ_ZQ: ${{ secrets.READ_ZQ }}
-      YOUTHHEADER_ZQ: ${{ secrets.YOUTHHEADER_ZQ }}
-      READTIME_ZQ: ${{ secrets.READTIME_ZQ }}
+          READ_ZQ: ${{ secrets.READ_ZQ }}
+          YOUTHHEADER_ZQ: ${{ secrets.YOUTHHEADER_ZQ }}
+          READTIME_ZQ: ${{ secrets.READTIME_ZQ }}
