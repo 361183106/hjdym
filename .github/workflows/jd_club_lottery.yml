@@ -6,7 +6,7 @@ name: 「京东」摇京豆
 on:
   workflow_dispatch:
   schedule:
-    - cron: '5 16 * * *'
+    - cron: '15 0-16/8 * * *'
   repository_dispatch:
     types: jd_club_lottery
 jobs:
