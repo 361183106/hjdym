@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        READ_ZQ: ${{ secrets.READ_ZQ }}
-        YOUTHHEADER_ZQ: ${{ secrets.YOUTHHEADER_ZQ }}
-        READTIME_ZQ: ${{ secrets.READTIME_ZQ }}
+        YOUTH_HEADER: ${{ secrets.YOUTH_HEADER }}
+        YOUTH_ARTBODY: ${{ secrets.YOUTH_ARTBODY }}
+        YOUTH_TIME: ${{ secrets.YOUTH_TIME }}
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
@@ -22,14 +22,12 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
-        if: env.YOUTHHEADER_ZQ
+        if: env.YOUTH_HEADER
         run: |
           npm install
       - name: '运行 【中青看点】'
-        if: env.YOUTHHEADER_ZQ
+        if: env.YOUTH_HEADER
         run: |
-          node taoxin526/hjdym/youth.js
+          node Youth.js
         env:
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          TZ: Asia/shanghai
+            TZ: Asia/shanghai
