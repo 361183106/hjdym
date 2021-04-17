@@ -30,4 +30,6 @@ jobs:
         run: |
           node Youth.js
         env:
+            DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+            DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
             TZ: Asia/shanghai
