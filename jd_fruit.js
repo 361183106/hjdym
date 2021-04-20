@@ -30,12 +30,9 @@ let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, n
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // 这个列表填入你要助力的好友的shareCode	
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开	
-  '20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b@1d18ed7c7e5d430a92ca0e9e8819d56f@b94681d5f9904722a7f277f86ef76aa9@728b92dfaacf4f97bd86df6cb3b352ea@3a1bd385ca3f4d23b158614b288fae65@9f7c308ed28346dd855d8e2ebc2f7142',	
+  '',	
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开	
-  '20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b@1d18ed7c7e5d430a92ca0e9e8819d56f@b94681d5f9904722a7f277f86ef76aa9@728b92dfaacf4f97bd86df6cb3b352ea@3a1bd385ca3f4d23b158614b288fae65@9f7c308ed28346dd855d8e2ebc2f7142',	
-  '20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b@1d18ed7c7e5d430a92ca0e9e8819d56f@b94681d5f9904722a7f277f86ef76aa9@728b92dfaacf4f97bd86df6cb3b352ea@3a1bd385ca3f4d23b158614b288fae65@9f7c308ed28346dd855d8e2ebc2f7142',	
-  '20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b@1d18ed7c7e5d430a92ca0e9e8819d56f@b94681d5f9904722a7f277f86ef76aa9@728b92dfaacf4f97bd86df6cb3b352ea@3a1bd385ca3f4d23b158614b288fae65@9f7c308ed28346dd855d8e2ebc2f7142',	
-  '20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b@1d18ed7c7e5d430a92ca0e9e8819d56f@b94681d5f9904722a7f277f86ef76aa9@728b92dfaacf4f97bd86df6cb3b352ea@3a1bd385ca3f4d23b158614b288fae65@9f7c308ed28346dd855d8e2ebc2f7142'	
+  ''	
 ]	
 let message = '', subTitle = '', option = {}, isFruitFinished = false;	
 const retainWater = 100;//保留水滴大于多少g,默认100g;	
