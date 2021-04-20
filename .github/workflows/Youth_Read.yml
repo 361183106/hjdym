@@ -1,9 +1,10 @@
 name: 中青自动阅读
 
+
 on:
   workflow_dispatch:
   schedule:
-     - cron: '5 6/8 * * *'
+     - cron: '6 1,17,21 * * *'
   watch:
     types: started
 
@@ -11,21 +12,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-	steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          repository: taoxin526/hjdym
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
     env:
-      YOUTH_READ: ${{ secrets.YOUTH_READ }}
-      YOUTH_READ2: ${{ secrets.YOUTH_READ2 }}
-      YOUTH_READ3: ${{ secrets.YOUTH_READ3 }}
-      YOUTH_READ4: ${{ secrets.YOUTH_READ4 }}
-      TZ: Asia/shanghai
+        YOUTH_READ: ${{ secrets.YOUTH_READ }}
+        YOUTH_READ2: ${{ secrets.YOUTH_READ2 }}
+        YOUTH_READ3: ${{ secrets.YOUTH_READ3 }}
+        YOUTH_READ4: ${{ secrets.YOUTH_READ4 }}
+        TZ: Asia/shanghai
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
@@ -33,16 +25,16 @@ jobs:
         with:
           node-version: 12.x
       - name: npm install
+        if: env.YOUTH_HEADER
         run: |
           npm install
-          
       - name: '运行 【中青看点自动阅读一】'
         if: env.YOUTH_READ
         run: |
           node Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME }}
+          
 
       - name: '运行 【中青看点自动阅读二】'
         if: env.YOUTH_READ2
@@ -50,7 +42,7 @@ jobs:
           node Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ2 }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME2 }}
+          
           
       - name: '运行 【中青看点自动阅读三】'
         if: env.YOUTH_READ3
@@ -58,7 +50,7 @@ jobs:
           node Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ3 }}
-          YOUTH_ATIME: ${{ secrets.YOUTH_ATIME3 }}
+          
           
       - name: '运行 【中青看点自动阅读四】'
         if: env.YOUTH_READ4
@@ -66,3 +58,6 @@ jobs:
           node Youth_Read.js
         env:
           YOUTH_READ: ${{ secrets.YOUTH_READ4 }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          TZ: Asia/shanghai
